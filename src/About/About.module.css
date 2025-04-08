@@ -3,7 +3,7 @@
     border: 1px solid;
     background-color: #061625b9;
     display: flex;
-    margin-top: 480px;
+    margin-top: 400px;
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 30px;
@@ -17,12 +17,13 @@
 }
 .aboutMeMsg{
     font-family: sans-serif;
-    font-size: 90%;
-    line-height: 1.3;
+    font-size: 85%;
+    line-height: 1.5;
+    margin-right: 3%;
 }
 .image{
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.377);
+    background-color: #00000060;
     height: 500px;
     border-radius: 30px;
 }
@@ -69,7 +70,7 @@
     box-shadow: 0px 2px 10px #00fff2;
 }
 .webdev{
-    line-height: 0.9;
+    line-height: 0.2;
     font-size: 75%;
     margin-top: 5%;
 }
@@ -90,7 +91,7 @@
 .projectName small{
     color: white;
     font-style: italic;
-    font-size: 70%;
+    font-size: 65%;
 }
 .descTitle{
     font-weight: bold;
@@ -110,7 +111,7 @@
 .qualifiDesc{
     color: #00fff2;
     font-family: arial;
-    font-size: 90%;
+    font-size: 80%;
     padding-bottom: 3%;
     line-height: 0.3;
 }
@@ -121,12 +122,21 @@
 .qualifiDesc small{
     font-style: italic;
 }
-@media (max-width:800px){
+@media(max-width:910px){
+    .skillsContainer a{
+        font-size: 110%;
+    }
+    .qualifiDesc{
+        font-size: 80%;
+    }
+    .qualification{
+        font-size: 80%;
+    }
+}
+@media (max-width:823px){
     .image{
         max-width:80% ;
-        background-color: rgb(31, 26, 26);
-        height: 50%;
-        
+        height: 50%;  
     }
     .aboutContainer{
         display: flex;
@@ -134,4 +144,16 @@
         justify-content: center;
         align-items: center;
     }
+}
+@media (max-width: 540px){
+    .webdev{
+        line-height: 1;
+    }
+    .qualifiDesc{
+        margin-bottom: 35px;
+    }
+    .aboutContainer{
+        margin-top: 380px;
+    }
+   
 }

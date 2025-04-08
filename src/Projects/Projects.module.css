@@ -208,6 +208,10 @@ button{
 }
 
 @media (max-width: 790px){
+    .myPro{
+        text-align: center;
+        margin-right: 10%;
+    }
     .projectsContainer{
         position: relative;
         top: 20px;
@@ -223,5 +227,26 @@ button{
     .projectCard{
         width: 200px;
     }
+    .showBtn{
+        margin-left: 45%;
+    }
 }
-
+@media (max-width: 1030px){
+    .projectInfo{
+        font-size: 90%;
+    }
+    .hiddenProjects{
+        font-size: 90%;
+    }
+}
+@media (max-width: 540px){
+    .showBtn{
+        margin-left: 42%;
+    }
+    .projectInfo{
+        font-size: 100%;
+    }
+    .hiddenProjects{
+        font-size: 100%;
+    }
+}

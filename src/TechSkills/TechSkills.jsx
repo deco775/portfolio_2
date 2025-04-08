@@ -25,7 +25,7 @@ function TechSkills(){
                     <ul>
                         <li>HTML5, CSS and JavaScript</li>
                         <li>React and Next.js</li>
-                        <li>Express.js</li>
+                        <li>Node.js</li>
                         <li>Flask</li>
                         <li>MySQL</li>
                     </ul>

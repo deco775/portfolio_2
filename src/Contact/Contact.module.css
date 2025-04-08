@@ -5,15 +5,23 @@
     justify-content: center;
     font-size: 150%;
     padding: auto;
-    padding-bottom: 5%;
-    padding-block: 15%;
+    padding-bottom: 1%;
+    padding-block: 8%;
+}
+.contactContainer h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 110%;
 }
 .emailIcon{
     font-size: 70%;
-    color: rgb(6, 136, 6);
+    color: #00fff2;
+    padding-right: 12px;
 }
 .symbol, p b{
-    color: red;
+    color: #ffffff;
+    font-size: 85%;
+    font-weight: normal;
 }
 .inputT{
     font-size: 1em;
@@ -34,13 +42,13 @@
 
 .icons{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     padding-bottom: 30px;
 }
 .icons a{
     font-size: 15px;
-    border: 1px solid rgb(5, 75, 34);
-    color: green;
+    border: 1px solid #00fff2;
+    color: #00fff2;
     padding-top: 5px;
     padding-bottom: 3px;
     padding-left: 6px;
@@ -48,36 +56,57 @@
     border-radius: 50%;
 }
 .icons a:hover{
-    background-color: green;
-    color: white;
+    background-color: #00fff2;
+    color: #08223b;
 }
+
+.icons a:active{
+    background-color: #dcfffd;
+}
+
 .cvBtn{
-    color: rgb(2, 2, 2);
+    color: #08223b;
     text-decoration: none;
-    font-size: 70%;
-    background-color: green;
-    padding: 3px 7px;
-    border-radius: 5px;
+    font-size: 14px;
+    background-color: #00fff2;
+    border: 1px solid #00fff2; 
+    padding: 3px 10px;
+    border-radius: 25px;
     font-weight: bold;
-    margin-top: 50px;
+    transition: box-shadow 0.3s, background-color 0.3s ease-in-out;
 }
 .cvBtn:hover{
-    background-color: white;
-    border: 1px solid green;  
+    background-color: #08223b;
+    border: 1px solid #00fff2; 
+    color: #00fff2; 
+    box-shadow: 1px 1px 5px #00fff2, -1px -1px 5px #00fff2;
 }
+.cvBtn:active{
+    background-color: #4a6c8b;
+}
+
 .inputT button{
-    border: 1px solid green;
-    background-color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 60%;
+    margin-left: 30%;
+    height: 35px;
+    color: #08223b;
+    font-size: 14px;
+    background-color: #00fff2;
+    border: 1px solid #00fff2; 
+    padding: 3px 10px;
     border-radius: 5px;
-    padding: 3px 1px;
-    font-size: 90%;
-    width: 50%;
-    margin-left: 1px;
     cursor: pointer;
+    transition: box-shadow 0.3s, background-color 0.3s ease-in-out;
 }
 .inputT button:hover{
-    background-color: white;
-    border: 1px solid green;
+    background-color: #08223b;
+    border: 1px solid #00fff2; 
+    color: #00fff2; 
+    box-shadow: 1px 1px 5px #00fff2, -1px -1px 5px #00fff2;
+}
+.inputT button:active{
+    background-color: #4a6c8b;
 }
 @media (max-width: 700px){
     .contactContainer{
@@ -85,5 +114,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-block: 20%;
     }
 }

@@ -24,9 +24,13 @@
     border: 1px solid #000000;
     border-radius: 10px;
     box-shadow: 10px 10px 8px black;
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease-in-out;
     margin-bottom: 1%;
     font-family: arial;
+}
+.pro:hover{
+    transform: translate(0, -10px);
+    background-color: #00fff2a6;
 }
 .firstPro{
     line-height: 1.9;
@@ -75,5 +79,13 @@ h1 {
     }
     .thirdPro{
         line-height: 1.9;
+    }
+}
+@media (max-width: 540px){
+    .program{
+        gap: 10px;
+    }
+    .techSkillsContainer{
+        margin: 0;
     }
 }

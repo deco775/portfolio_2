@@ -12,12 +12,11 @@ export default function About() {
             <div className={styles.aboutMeContainer}>
                 <h2>About Me</h2>
                 <p className={styles.aboutMeMsg}>
-                As a passionate full-stack web developer, With a solid foundation 
-                 in both front-end and back-end development, My proficiency in frameworks 
-                 like React, Next, and Vue.js, combined with my experience in back-end development 
-                 using Node.js, Express.js, and Flask, allows me to tackle complex projects with ease. 
-                 Whether it's building a responsive UI, optimizing database performance, or integrating third-party APIs, 
-                 I'm dedicated to delivering top-notch solutions that exceed client expectations.
+                    I am a Software Engineer with a strong passion for building efficient and scalable
+                    full-stack web application. I have a solid foundation in both front-end and back-end development. 
+                    my proficiency in frameworks like React, Next.js, Css, combined with my experience using Node.js and
+                    Flask allows me to tackle complex projects. I am dedicated in delivering top-notch solutions that exceed
+                    client expectations.
                 </p>
                 <div className={styles.skillsContainer}>
                     <a className={`${styles.aSkills} ${activeTab === "skills" ? styles.activeTab : ""}`}  onClick={() => setActiveTab("skills")}>Skills</a>
@@ -31,6 +30,7 @@ export default function About() {
                             <p className={styles.webdev}>UI/UX design</p>
                             <p className={styles.webdev}>Web app development</p>
                             <p className={styles.webdev}>Responsive web design</p>
+                            <p className={styles.webdev}>App development</p>
                             <p className={styles.softSkills} >Soft skills</p>
                             <ul>
                                 <li>Effective communication and problem-solving skills</li>

@@ -3,7 +3,14 @@
     font-size: 1.2em;
     justify-content: center;
     border: 1px solid;
-    height: 5%;
-    background-color: gray;
+    height: 3%;
+    background-color: #0000008e;
     margin: 0px;
+}
+.footer p{
+    font-family: monospace;
+    font-size: 90%;
+}
+.heart{
+    color: #00fff2;
 }

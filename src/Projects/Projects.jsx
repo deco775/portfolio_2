@@ -15,7 +15,7 @@ function Projects(){
                         <h3>Shopping Cart</h3>
                         <p>
                             The Shopping Cart is a web-application that allows
-                            users to browse products, add/remove items to their cart, and the 
+                            users to browse products, add/remove items to/from their cart, and the 
                             the amount is updated.
                         </p>
                         <span className={styles.projectLan}>

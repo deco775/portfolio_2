@@ -49,10 +49,10 @@ function Contact() {
             </div>
             <form onSubmit={handleSubmit} >
                 <div className={styles.inputT} >
-                    <input type="text" name="name" placeholder="name"/>
-                    <input type="email" name="email"  placeholder="your email" value={formData.email} onChange={handleChange} required />
-                    <textarea name="message" placeholder=" your message" value={formData.message} onChange={handleChange} required></textarea>
-                    <button type='submit' href="#pitso">send</button>
+                    <input type="text" name="name" placeholder="name" value={formData.name} onChange={handleChange} />
+                    <input type="email" name="email"  placeholder="email" value={formData.email} onChange={handleChange} required />
+                    <textarea name="message" placeholder="message" value={formData.message} onChange={handleChange} required></textarea>
+                    <button type='submit'>send</button>
                 </div>
             </form>
     </div>
