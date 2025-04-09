@@ -6,32 +6,60 @@ import myCv from './PitsoCV.pdf'
 
 function Contact() {
   
-  const [formData, setFormData] = useState({
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertMessage, setAlertMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .send(
-        "service_p3b9gfu",
-        "template_tqqv8vl",
-        formData,
-        "9ABxtarOoEN0yMy0w"
-      )
-      .then(() => {
-        alert("Message sent!");
-        setFormData({ email: "", message: "" }); // Reset form
+    const serviceId = 'service_cds70g5';
+    const templateId = 'template_tqqv8vl';
+    const publicKey = '9ABxtarOoEN0yMy0w';
+
+    //A new object that contains dynamic template params
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: 'Pitso',
+      message: message,
+    };
+
+   /* // Send the email using EmailJS
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully!', response);
+        setName('');
+        setEmail('');
+        setMessage('');
+        alert('Message sent successfully');
       })
-      .catch((error) => console.error("Error sending message:", error));
-  };
-  
+      .catch((error) => {
+        console.error('Error sending email:', error);
+      });*/
+      
+emailjs.send(serviceId, templateId, templateParams, publicKey)
+  .then((response) => {
+    console.log('Email sent successfully!', response);
+    setName('');
+    setEmail('');
+    setMessage('');
+    setAlertMessage('Message sent successfully!');
+    setShowAlert(true);
+
+    // Auto-hide after 3 seconds
+    setTimeout(() => setShowAlert(false), 3000);
+  })
+  .catch((error) => {
+    console.error('Error sending email:', error);
+    setAlertMessage('Failed to send message.');
+    setShowAlert(true);
+    setTimeout(() => setShowAlert(false), 3000);
+  });
+
+  }
 
   return (
     <div className={styles.contactContainer} id='contact' >
@@ -49,13 +77,19 @@ function Contact() {
             </div>
             <form onSubmit={handleSubmit} >
                 <div className={styles.inputT} >
-                    <input type="text" name="name" placeholder="name" value={formData.name} onChange={handleChange} />
-                    <input type="email" name="email"  placeholder="email" value={formData.email} onChange={handleChange} required />
-                    <textarea name="message" placeholder="message" value={formData.message} onChange={handleChange} required></textarea>
+                    <input type="text" name="name" placeholder="name" value={name} onChange={(e)=>setName(e.target.value)} />
+                    <input type="email" name="email"  placeholder="email" value={email} onChange={(e)=>setEmail(e.target.value)} required />
+                    <textarea name="message" placeholder="message" value={message} onChange={(e)=>setMessage(e.target.value)} required></textarea>
+                    {showAlert && (
+                      <div className={styles.customAlert}>
+                        <p>{alertMessage}</p>
+                      </div>
+                    )}
                     <button type='submit'>send</button>
                 </div>
             </form>
     </div>
+    
   )
 }
 export default Contact;
