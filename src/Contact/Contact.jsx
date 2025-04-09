@@ -1,7 +1,7 @@
 import styles from './Contact.module.css';
 import { useState } from 'react';
 import emailjs from "emailjs-com"
-import myCv from './PitsoCV.pdf'
+import myCv from './PitsoCVFin.pdf'
 
 
 function Contact() {
