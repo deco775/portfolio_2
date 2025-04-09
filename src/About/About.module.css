@@ -155,5 +155,12 @@
     .aboutContainer{
         margin-top: 380px;
     }
+    .aboutMeMsg{
+        
+        margin-right: 1%;
+    }
+    .skillsContainer{
+        font-size: 95%;
+    }
    
 }
