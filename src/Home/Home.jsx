@@ -9,7 +9,7 @@ function Home(){
             <h2>Hi, I'm <b className={styles.pitso}>Pitso Mkansi</b></h2>
             <p> I don't just build web application — I create fast, responsive, and 
                 user-focused web experiences that drive results. My experience with frameworks like React, Next.js,
-                and Node.js has allowed me to develop a keen eye for detail and a ability to deliver high-quality results.
+                and Node.js has allowed me to develop a keen eye for detail and an ability to deliver high-quality results.
             </p>
             <div className={styles.icons}>
                 <a href={myCv} download="PitsoCV.pdf" className={styles.cvBtn}>Download CV</a>
