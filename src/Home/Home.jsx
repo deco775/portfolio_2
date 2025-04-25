@@ -1,5 +1,5 @@
 import styles from './Home.module.css';
-import myCv from './PitsoCVFin.pdf'
+import myCv from './myCVFin.pdf'
 
 function Home(){
 

@@ -28,7 +28,7 @@ function Projects(){
                 </div>
                 <div className={`${styles.projectCard} ${styles.movies}`} >
                     <div className={styles.projectInfo}>
-                        <h3 >Movies App</h3>
+                        <h3 >Movie App</h3>
                         <p>
                             A React-based search engine for movies that allows users to search for movies, 
                             view details, and explore trending films. Users can favor movies by clicking on the heart icon, 

@@ -14,16 +14,16 @@ function TechSkills(){
                     <h3>Programming Languages</h3>
                     <ul>
                         <li>C</li>
-                        <li>Java</li>
                         <li>Python</li>
-                        <li>JavaScript ES6+</li>
+                        <li>JavaScript</li>
+                        <li>React Native <b style={{fontStyle: "italic", fontSize: "80%"}}>(js framework)</b></li>
                     </ul>
                     <img className={styles.logos} src={logo1}/>
                 </div>
                 <div className={`${styles.pro} ${styles.secondPro}`}>
                     <h3>Web Devevlopment</h3>
                     <ul>
-                        <li>HTML5, CSS and JavaScript</li>
+                        <li>HTML, CSS and JavaScript</li>
                         <li>React and Next.js</li>
                         <li>Node.js</li>
                         <li>Flask</li>
@@ -38,7 +38,7 @@ function TechSkills(){
                         <li>VS Code</li>
                         <li>JSON & RESTful API</li>
                         <li>Git and Github</li>
-                        <li>Canva</li>
+                        <li>Canva & Figma</li>
                     </ul> 
                     <img className={styles.logos} src={logo3}/>                   
                 </div>
