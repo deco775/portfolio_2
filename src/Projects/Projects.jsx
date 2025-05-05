@@ -3,12 +3,13 @@ import styles from './Projects.module.css';
 //import slot from './slot.exe';
 //import turtle from './main.exe';
 
-function Projects(){
+function Projects({ innerRef }){
     const [showContent, setShowContent] = useState(false)
 
     return(
         <>
-            <h2 className={styles.myPro} id='projects' >My projects</h2>
+        <section id="projects" ref={innerRef} >
+            <h2 className={styles.myPro} >My projects</h2>
             <div className={styles.projectsContainer} >
                 <div className={`${styles.projectCard} ${styles.cart}`} >
                     <div className={styles.projectInfo}>
@@ -180,7 +181,7 @@ function Projects(){
             <button className={styles.showBtn} onClick={()=> setShowContent(!showContent)}>
                 {showContent? "see less": "see more"}
             </button>
-        
+       </section> 
     </>
     )
 }

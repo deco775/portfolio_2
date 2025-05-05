@@ -1,3 +1,6 @@
+.mainContainer{
+    padding-bottom: 220px;
+}
 .container h4{
     line-height: 20%;
     color: #ffffff;
@@ -24,7 +27,7 @@
     height: 80%;
     position: relative;
     top: 150px;
-    left: 8%;
+    left: 6.2%;
 }
 .icons{
     display: flex;
@@ -81,7 +84,7 @@
 .cvBtn:active{
     background-color: #4a6c8b;
 }
-@media (max-width: 720px){
+@media (max-width: 750px){
     .container{
         max-width: 100%;
         left: 1%;
@@ -97,10 +100,14 @@
     }
 
 }
-@media (max-width: 900px){
+@media (max-width: 950px){
     .image{
         width: 32%;
         max-width: 55%;
     }
-
+}
+@media (max-width: 450px){
+    .container h4{
+        font-size: 90%;
+    }
 }

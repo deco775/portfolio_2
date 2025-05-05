@@ -5,7 +5,9 @@
     border: 1px solid;
     height: 3%;
     background-color: #0000008e;
-    margin: 0px;
+    margin-right: -5px;
+    margin-left: -8px;
+    margin-bottom: -8px;
 }
 .footer p{
     font-family: monospace;

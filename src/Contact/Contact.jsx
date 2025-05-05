@@ -4,7 +4,7 @@ import emailjs from "emailjs-com"
 import myCv from './myCVFin.pdf'
 
 
-function Contact() {
+function Contact({ innerRef }) {
   
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -62,7 +62,8 @@ emailjs.send(serviceId, templateId, templateParams, publicKey)
   }
 
   return (
-    <div className={styles.contactContainer} id='contact' >
+    <section id="contact" ref={innerRef} >
+    <div className={styles.contactContainer} >
             <div className={styles.symbols} >
                 <h2>Contact Me</h2>
                 <p className={styles.emailIcon}><i className="fa-solid fa-envelope" ></i> <b>mkansipitso@gmail.com</b></p>
@@ -89,7 +90,7 @@ emailjs.send(serviceId, templateId, templateParams, publicKey)
                 </div>
             </form>
     </div>
-    
+    </section>
   )
 }
 export default Contact;

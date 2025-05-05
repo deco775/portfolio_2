@@ -1,10 +1,11 @@
 import styles from './Home.module.css';
 import myCv from './myCVFin.pdf'
 
-function Home(){
+function Home({ innerRef }){
 
     return(
-        <div className={styles.container} id='home'>
+        <section id="home" ref={innerRef} className={styles.mainContainer} >
+        <div className={styles.container} >
             <h4>Software Engineer</h4>
             <h2>Hi, I'm <b className={styles.pitso}>Pitso Mkansi</b></h2>
             <p> I don't just build web application — I create fast, responsive, and 
@@ -19,6 +20,7 @@ function Home(){
                 <a href="https://www.facebook.com/mkansi.deco.7" className={styles.homeIcn}><i className="fa-brands fa-facebook" ></i></a>
             </div>
         </div>
+        </section>
     )
 }
 export default Home;

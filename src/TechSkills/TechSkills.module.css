@@ -1,8 +1,7 @@
 
 .techSkillsContainer{
-    padding-block: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 6.4%;
+    margin-right: 7%;
     padding-bottom: 280px;
 }
 .title{
@@ -33,10 +32,10 @@
     background-color: #00fff2a6;
 }
 .firstPro{
-    line-height: 1.9;
+    line-height: 2.4;
 }
 .secondPro{
-    line-height: 1.6;
+    line-height: 1.8;
 }
 .thirdPro{
     line-height: 1.8;
@@ -55,9 +54,7 @@ h1 {
 @media (max-width: 700px){
     .techSkillsContainer{
         margin-left: 1px;
-
     }
-    
     .pro{
         max-width: 80%;
         font-size: 80%;
@@ -87,5 +84,13 @@ h1 {
     }
     .techSkillsContainer{
         margin: 0;
+    }
+}
+@media (max-width: 450px){
+    .firstPro{
+        line-height: 2.7;
+    }
+    .thirdPro{
+        line-height: 2;
     }
 }
