@@ -88,16 +88,22 @@ h1 {
 }
 @media (max-width: 450px){
     .firstPro{
-        line-height: 2.7;
+        line-height: 3;
     }
     .thirdPro{
         line-height: 2;
     }
     .techSkillsContainer{
         margin-right: 2%;
-        background-color: rgba(121, 5, 5, 0.418);
     }
     .program{
-        font-size: 88%;
+        font-size: 85%;
     }
+    .pro h3{
+    
+        line-height: 1.1;
+        padding-bottom: 4px;
+    }
+   
+   
 }
