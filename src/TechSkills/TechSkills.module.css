@@ -93,4 +93,11 @@ h1 {
     .thirdPro{
         line-height: 2;
     }
+    .techSkillsContainer{
+        margin-right: 2%;
+        background-color: red;
+    }
+    .program{
+        font-size: 92%;
+    }
 }
