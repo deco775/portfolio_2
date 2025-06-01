@@ -67,6 +67,8 @@ export default function About({ innerRef }) {
                             <p className={styles.qualifiDesc} >ALX Africa <small> – 12 months Software Engineering program</small></p>
                             <p className={styles.qualification}>Bachelor of Education <small>( Mathematics Major )</small> </p>
                             <p className={styles.qualifiDesc}>University of Pretoria</p>
+                            <p className={styles.qualification} >Grade 12</p>
+                            <p className={styles.qualifiDesc}>Magigwana Secondary School</p>
                         </div>
                     )}
                 </div>

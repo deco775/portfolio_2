@@ -7,27 +7,26 @@ section {
 .navbar {
   position: fixed;
   top: 0;
-  width: 90%;
-  background-color: #08223b;
+  width: 100%;
+  background-color: #011120;
   padding: 15px;
-  height: 30px;
-  margin-left: 5%;
-  margin-right: 3%;
+  height: 40px;
+  margin-left: -8px;
   z-index: 1000;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
+
 .navbar.hide {
-   transform: translate(0px, -100px);
+  transform: translateY(-100%);
 }
 
 .navbar.show {
-  transform: translate(0px, 0px);
+  transform: translateY(0);
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
   margin: auto;
   font-family: lucida sans;
   margin-top: 10px;
@@ -37,6 +36,7 @@ section {
   color: white;
   font-size: 25px;
   font-weight: bold;
+  margin-left: 5.5%;
 }
 .logo::first-letter{
   color: #00fff2;
@@ -48,7 +48,7 @@ section {
   display: flex;
   gap: 35px;
   margin-top: 0;
-  margin-right: 5%;
+  margin-right: 8%;
   margin-bottom: 3px;
 }
 
@@ -131,5 +131,9 @@ section {
   .nav-links li {
     margin: 10px 0;
   }
- 
+}
+@media(max-width:910px){
+    .nav-links a.active{
+      color: #7e0000;
+}
 }
