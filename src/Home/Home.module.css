@@ -84,7 +84,7 @@
 .cvBtn:active{
     background-color: #4a6c8b;
 }
-@media (max-width: 750px){
+@media (max-width: 768px){
     .container{
         max-width: 100%;
         left: 1%;
@@ -98,23 +98,32 @@
         right: 30%;
         left: 30%;
     }
-
+    .container h2, p{
+        font-size: 70%;
+    }
 }
 @media (max-width: 950px){
     .image{
-        width: 32%;
-        max-width: 55%;
+        width: 30%;
+        max-width: 50%;
     }
+    /*.container h2, p{
+        font-size: 70%;
+    }*/
 }
 @media (max-width: 450px){
     .container h4{
         font-size: 12px;
     }
 }
+@media (max-width: 885px){
+    .container h2, p{
+        font-size: 130%;
+    }
+}
 /* For text Animantio */
 
 .animatedT{
-    .font-weight: 600;
     min-width: 280px;
 }
 
@@ -123,7 +132,7 @@
 }
 
 .animatedT span::before{
-    content: "Pitso Mkansi";
+    content: "Pitso";
     color: #00fff2;
     animation: words 20s infinite;
 }
