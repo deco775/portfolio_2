@@ -111,3 +111,60 @@
         font-size: 12px;
     }
 }
+/* For text Animantio */
+
+.animatedT{
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animatedT span{
+    position: relative;
+}
+
+.animatedT span::before{
+    content: "Pitso Mkansi";
+    color: #00fff2;
+    animation: words 20s infinite;
+}
+
+
+.animatedT span::after{
+    content: "";
+    position: absolute;
+    top: 1px;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #08223b;
+    border-left: 3px solid #00fff2;
+    right: -8px;
+    animation: cursor 0.9s infinite, typing 33s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,33%{
+        content: "Pitso Mkansi.";
+    }
+    34%,66%{
+        content: "a Software Engineer.";
+    }
+    67%,100%{
+        content: "a Full-Stack Developer.";
+    }
+   
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}

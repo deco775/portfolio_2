@@ -7,7 +7,7 @@ function Home({ innerRef }){
         <section id="home" ref={innerRef} className={styles.mainContainer} >
         <div className={styles.container} >
             <h4>Software Engineer</h4>
-            <h2>Hi, I'm <b className={styles.pitso}>Pitso Mkansi</b></h2>
+            <h2 className={styles.animatedT} >Hi, I'm <span></span></h2>
             <p> I don't just build web application — I create fast, responsive, and 
                 user-focused web experiences that drive results. My experience with frameworks like React, Next.js,
                 and Node.js has allowed me to develop a keen eye for detail and an ability to deliver high-quality results.
