@@ -13,11 +13,9 @@ export default function About({ innerRef }) {
             <div className={styles.aboutMeContainer}>
                 <h2>About Me</h2>
                 <p className={styles.aboutMeMsg}>
-                    I am a Software Engineer with a strong passion for building efficient and scalable
-                    full-stack web application. I have a solid foundation in both front-end and back-end development. 
-                    my proficiency in frameworks like React, Next.js, Css, combined with my experience using Node.js and
-                    Express.js allows me to tackle complex projects. I am dedicated in delivering top-notch solutions that exceed
-                    client expectations.
+                    I am a Front-End developer skilled in HTML, CSS, JavaScript, React.js, and Next.js.
+                    I have a passion for translating design concepts into interactive, user-friendly interfaces.
+                    I create clean, responsive, and visually engaging websites. I enjoy problem-solving, optimizing performance, and ensuring websites are accessible and mobile-friendly.
                 </p>
                 <div className={styles.skillsContainer}>
                     <a className={`${styles.aSkills} ${activeTab === "skills" ? styles.activeTab : ""}`}  onClick={() => setActiveTab("skills")}>Skills</a>
@@ -42,11 +40,11 @@ export default function About({ innerRef }) {
                     )}
                     {activeTab === "experience" && (
                         <div className={styles.skillSet}>
-                            <h3 style={{color: 'white', fontSize: '13px', fontFamily: 'verdana' ,lineHeight: '0.5'}} >Software Engineering Tutor</h3>
-                            <p style={{color: '#00fff2', fontSize: '11px', lineHeight: '0.5' }} >ALX Africa | <i>Aug 2023 - Nov 2024</i> </p>
+                            <h3 style={{color: 'white', fontSize: '13px', fontFamily: 'verdana' ,lineHeight: '0.5'}} >Junior Software Engineer</h3>
+                            <p style={{color: '#00fff2', fontSize: '11px', lineHeight: '0.5' }} >KandhGroup | <i>May 2025 - July 2025</i> </p>
                             <ul style={{color: 'white', fontSize: '11px', lineHeight: '1.5', fontFamily: 'verdana' }} >
-                                <li>Delivered tutoring in core software engineering subjects including algorithms, web development, and databases.</li>
-                                <li>Improved average student performance by 15% through customized support and mentoring.</li>
+                                <li>Developed automation scripts to streamline marketing and product data workflows..</li>
+                                <li>Built a Python tool to batch overlay the KandhGroup company logo onto marketing images, supporting multiple input formats (Excel, CSV).</li>
                             </ul>
                             <p className={styles.projectExp} >Project Experience</p>
                             <p className={styles.projectName} >AI Prompts <small> - Team Project | Software Engineering Program </small> </p>

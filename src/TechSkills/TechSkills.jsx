@@ -24,11 +24,11 @@ function TechSkills({ innerRef }){
                 <div className={`${styles.pro} ${styles.secondPro}`}>
                     <h3>Web Devevlopment</h3>
                     <ul>
-                        <li>HTML, CSS and JavaScript</li>
-                        <li>React & Next.js</li>
-                        <li>Node & Express.js</li>
-                        <li>Flask</li>
-                        <li>MongoDB</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>Next.js</li>
                         <li>MySQL</li>
                     </ul>
                     <img className={styles.logos} src={logo2}/>
@@ -36,7 +36,7 @@ function TechSkills({ innerRef }){
                 <div className={`${styles.pro} ${styles.thirdPro}`}>
                     <h3>Tools</h3>
                     <ul>
-                        <li>Linux</li>
+                        <li>Linux Commands</li>
                         <li>VS Code</li>
                         <li>JSON & RESTful API</li>
                         <li>Git and Github</li>
